@@ -381,7 +381,6 @@ a{
 /*Our Services Style Starts*/
 #services{
 	margin: 30px 0;
-	border: 2px solid red;
 }
 .section-title{
 	text-align: center;
@@ -442,7 +441,6 @@ a{
 /*Investors Style Starts*/
 #investors{
 	margin-bottom: 50px;
-	border: 2px solid blue;
 }
 .investors-items{
 	display: flex;
@@ -484,7 +482,6 @@ a{
 
 /*Contact Style Starts*/
 #contact{
-	border: 1px solid green;
 	margin-bottom: 50px;
 }
 .contact{
@@ -531,6 +528,88 @@ a{
 	border-radius: 30px;
 	border: none;
 	text-transform: capitalize;
+}
+
+#footer .footer-img img{
+	width: 100%;
+}
+.footer{
+	width: 100%;
+	margin-top: -10px;
+	padding: 20px 50px 50px 50px;
+	background-color: #4F4F4F;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+.footer .company-info{
+	width: 35%;
+}
+.footer .company-info .company-info-address,
+.footer .company-info .company-info-email{
+	font-size: 18px;
+	font-weight: 400;
+	margin-top: 10px;
+	color: rgba(255, 255, 255, 0.7);
+} 
+.footer .company-info .company-info-address span,
+.footer .company-info .company-info-email span{
+	font-weight: bold;
+	margin-right: 10px;
+	color: #ffffff;
+}
+.footer .links{
+	width: 45%;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+.footer .links .links-item{
+	width: 33.33%;
+}
+.footer .links .links-item .links-item-head{
+	font-size: 18px;
+	font-weight: 600;
+	color: #E02828;
+	margin-bottom: 20px;
+	text-transform: capitalize;
+}
+.footer .links .links-item .links-item-links ul li{
+	margin-bottom: 5px;
+}
+.footer .links .links-item .links-item-links ul li a{
+	font-size: 18px;
+	letter-spacing: 0.3px;
+	color: #BFBFBF;
+	text-transform: capitalize;
+}
+.footer .social-links{
+	width: 20%;
+}
+.footer .social-links .social-links-head{
+	font-size: 18px;
+	font-weight: 600;
+	color: #E02828;
+	margin-bottom: 20px;
+	text-transform: capitalize;
+}
+.footer .social-links .social-links-links ul li{
+	display: inline;
+}
+
+/*Copyright Style starts*/
+.copyright{
+	width: 100%;
+	background-color: #4F4F4F;
+}
+.copyright .copyright-text{
+	text-align: center;
+	padding: 15px 0;
+}
+.copyright .copyright-text p{
+	font-size: 18px;
+	color: #E4E4E4;
+	font-weight: 400;
 }
 
 
@@ -646,8 +725,8 @@ a{
 	}
 
 	.investors-items .investors-item{
-		width: 100%;
-		margin-bottom: 30px;
+		width: 95%;
+		margin: 0 auto 30px auto;
 	}
 
 	.contact .contact-form{
@@ -655,6 +734,35 @@ a{
 	}
 	.contact .contact-img{
 		display: none;
+	}
+
+	.footer{
+		padding: 20px;
+	}
+	.footer .company-info{
+		width: 100%;
+		margin-bottom: 20px;
+	}
+	.footer .links{
+		width: 100%;
+		margin-bottom: 20px;
+	}
+	.footer .links .links-item{
+		width: 33.33%;
+	}
+	.footer .links .links-item:nth-child(3){
+		padding-left: 20px;
+	}
+	.footer .links .links-item .links-item-links ul li a{
+		font-size: 16px;
+	} 
+	.footer .social-links{
+		text-align: center;
+		width: 100%;
+	}
+
+	.copyright .copyright-text p{
+		font-size: 16px;
 	}
 }
 
@@ -771,6 +879,16 @@ a{
 
 	.investors-items .investors-item .investors-item-img{
 		height: 140px;
+	}
+
+	.footer{
+		padding: 30px;
+	}
+	.footer .company-info .company-info-address, .footer .company-info .company-info-email{
+		font-size: 16px;
+	}
+	.footer .links .links-item .links-item-links ul li a{
+		font-size: 16px;
 	}
 
 }
