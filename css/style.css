@@ -482,6 +482,58 @@ a{
 	color: #EE3A48;
 }
 
+/*Contact Style Starts*/
+#contact{
+	border: 1px solid green;
+	margin-bottom: 50px;
+}
+.contact{
+	width: 100%;
+	display: flex;
+	align-items: center;
+	flex-wrap: wrap;
+}
+.contact .contact-img{
+	width: 50%;
+	text-align: right;
+}
+.contact .contact-img img{
+	width: 90%;
+}
+.contact .contact-form{
+	width: 48%;
+}
+.contact .contact-form .form-group label{
+	display: block;
+	text-transform: capitalize;
+	color: #EE3A48;
+	font-size: 18px;
+	font-weight: 400;
+}
+.contact .contact-form .form-group .form-control{
+	width: 100%;
+	border: none;
+	outline: none;
+	border-bottom: 1px solid #C9C9C0;
+	margin-bottom: 10px;
+	padding: 4px 0;
+}
+.contact .contact-form .contact-btn{
+	margin-top: 20px;
+}
+.contact .contact-form .contact-btn button{
+	padding: 7px 15px;
+	color: #ffffff;
+	font-size: 16px;
+	font-weight: 600;
+	background-color: #EE3A48;
+	cursor: pointer;
+	border-radius: 30px;
+	border: none;
+	text-transform: capitalize;
+}
+
+
 /* Media queries - Responsive timeline on screens less than 600px wide */
 /*Style for different devices*/
 @media(max-width: 767px){
@@ -596,6 +648,13 @@ a{
 	.investors-items .investors-item{
 		width: 100%;
 		margin-bottom: 30px;
+	}
+
+	.contact .contact-form{
+		width: 100%;
+	}
+	.contact .contact-img{
+		display: none;
 	}
 }
 
