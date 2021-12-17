@@ -480,6 +480,72 @@ a{
 	color: #EE3A48;
 }
 
+/*FAQ Style Starts*/
+#faq{
+	margin-bottom: 50px;
+}
+.faq .accordion {
+    background-color: #F9FBFF;
+    color: #666666;
+    cursor: pointer;
+    padding: 10px 18px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 26px;
+    font-weight: 400;
+    transition: 0.4s;
+    border-left: 5px solid #EE3A48;
+    margin-bottom: 15px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.09);
+}
+.faq .accordion span{
+	font-size: 36px;
+	border: none;
+	color: #EE3A48;
+	font-weight: 700;
+	margin-right: 10px;
+}
+.faq .active, .faq .accordion:hover {
+  background-color: #F9FBFF;
+}
+
+.faq .accordion:after {
+	content: '\002B';
+  	color: #EE3A48;
+  	font-weight: bold;
+  	float: right;
+  	margin-left: 5px;
+  	border-radius: 50%;
+  	background-color: #C4C4C4;
+  	padding: 0 7px;
+}
+
+.faq .active:after {
+  content: "\2212";
+}
+
+.faq .panel {
+  padding: 0 18px;
+  background-color: white;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+  border-left: 5px solid #138EAA;
+  margin-top: -15px;
+  margin-bottom: 15px;
+  color: #666666;
+  font-size: 16px;
+}
+.faq .panel p{
+	margin-top: 10px;
+}
+.faq .panel span{
+	font-size: 36px;
+	color: #138EAA;
+}
+
 /*Contact Style Starts*/
 #contact{
 	margin-bottom: 50px;
@@ -729,6 +795,23 @@ a{
 		margin: 0 auto 30px auto;
 	}
 
+	.faq .accordion{
+		font-size: 16px;
+		position: relative;
+	}
+	.faq .accordion span{
+		font-size: 20px;
+	}
+	.faq .accordion:after{
+		padding: 3px 7px;
+		position: absolute;
+		top: 20px;
+		right: 10px;
+	}
+	.faq .panel span {
+		font-size: 20px;
+	}
+
 	.contact .contact-form{
 		width: 100%;
 	}
@@ -879,6 +962,16 @@ a{
 
 	.investors-items .investors-item .investors-item-img{
 		height: 140px;
+	}
+
+	.faq .accordion{
+		font-size: 20px;
+	}
+	.faq .accordion span{
+		font-size: 26px;
+	}
+	.faq .panel span {
+		font-size: 26px;
 	}
 
 	.footer{
