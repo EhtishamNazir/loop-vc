@@ -720,7 +720,7 @@ a{
 	text-transform: capitalize;
 }
 .register .register-text .register-text-btn{
-	margin-top: 20px;
+	margin-top: 40px;
 	text-align: center;
 }
 .register .register-text .register-text-btn a{
@@ -826,6 +826,55 @@ a{
 	width: 100%;
 	text-transform: capitalize;
 	cursor: pointer;
+}
+
+/*verify-investor.html page styles*/
+.register-enterprenuer.verify-account .register-text{
+	padding: 30px 50px;
+}
+.register-enterprenuer.verify-account  .form-group-cont{
+	margin-bottom: 20px;
+}
+.register-enterprenuer.verify-account .form-group-cont .form-group {
+	width: 80%;
+	margin: auto;
+}
+.register-enterprenuer.verify-account .form-group-cont .form-group select{
+	font-size: 18px;
+	color: #828282;
+	padding: 10px 0;
+	cursor: pointer;
+}
+.register-enterprenuer.verify-account .form-group-cont .form-group .form-control::placeholder{
+	font-size: 18px;
+	color: #828282;
+}
+.register-enterprenuer.verify-account .form-group-cont .form-group .form-control{
+	padding: 15px 0;
+}
+.register-enterprenuer.verify-account  .form-group-cont .submit-btn{
+	width: 80%;
+}
+
+/*login-investor.html, login-enterprenuer.html page styles*/
+.register-enterprenuer.login-account .register-text{
+	padding: 30px 50px;
+}
+.register-enterprenuer.login-account .register-form .register-form-btns{
+	margin-bottom: 40px;
+}
+.register-enterprenuer.login-account .register-form  .form-group-cont{
+	margin-bottom: 20px;
+}
+.register-enterprenuer.login-account .register-form .form-group-cont .form-group {
+	width: 80%;
+	margin: auto;
+}
+.register-enterprenuer.login-account .register-form .form-group-cont .form-group .form-control{
+	padding: 5px 0;
+}
+.register-enterprenuer.login-account .register-form  .form-group-cont .submit-btn{
+	width: 80%;
 }
 
 
@@ -998,6 +1047,7 @@ a{
 		font-size: 16px;
 	}
 
+	/*register pages styles*/
 	.register-enterprenuer{
 		margin: 80px 0 20px 0;
 	}
@@ -1006,13 +1056,24 @@ a{
 	}
 	.register-enterprenuer .register .register-text{
 		width: 100%;
-		padding: 30px 0;
+		padding: 30px 20px;
 		margin-bottom: 20px;
 	}
 	.register-enterprenuer .register .register-form{
 		width: 100%;
 		padding: 0;
 		margin-top: 20px;
+	}
+
+	/*verify account's page styles*/
+	.register-enterprenuer.verify-account .form-group-cont .form-group,
+	.register-enterprenuer.verify-account .form-group-cont .submit-btn{
+		width: 100%;
+	}
+
+	/*login's page style*/
+	.register-enterprenuer.login-account .register-text .register-text-btn a{
+		padding: 7px 50px;
 	}
 }
 
@@ -1151,6 +1212,7 @@ a{
 		font-size: 16px;
 	}
 
+	/*register pages styles*/
 	.register-enterprenuer .register{
 		width: 90%;
 	}
@@ -1162,6 +1224,23 @@ a{
 	}
 	.register .register-text .register-text-btn{
 		margin-top: 30px;
+	}
+
+	/*verify account pages styles*/
+	.register-enterprenuer.verify-account .form-group-cont .form-group,
+	.register-enterprenuer.verify-account .form-group-cont .submit-btn{
+		width: 100%;
+	}
+	.register-enterprenuer.verify-account .register-text{
+		padding: 30px 20px;
+	}
+
+	/*login's page style*/
+	.register-enterprenuer.login-account .register .register-text{
+		padding: 30px 20px;
+	}
+	.register-enterprenuer.login-account .register-text .register-text-btn a{
+		padding: 7px 20px;
 	}
 
 
@@ -1188,5 +1267,10 @@ a{
 
 	.investors-items .investors-item .investors-item-img{
 		height: 170px;
+	}
+
+	/*login pages styles*/
+	.register-enterprenuer.login-account .register-text .register-text-btn a{
+		padding: 7px 20px;
 	}
 }
