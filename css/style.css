@@ -60,6 +60,7 @@ a{
 	z-index: 99;
 	padding: 15px 40px;
 	background-color: rgba(255, 255, 255, 1);
+	border-bottom: 1px solid #CCCCCC;
 }
 .header-main{
 	width: 100%;
@@ -678,6 +679,155 @@ a{
 	font-weight: 400;
 }
 
+/*register-enterprenuer.html page styles*/
+.register-enterprenuer{
+	margin: 120px 0 50px 0;
+}
+.register-enterprenuer .register{
+	width: 80%;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	margin: 0 auto;
+}
+.register-enterprenuer .register .register-text{
+	width: 40%;
+	align-items: center;
+	background-color: #EE3A48;
+	padding: 0 50px;
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+.register .register-text .register-text-img{
+	text-align: center;
+}
+.register .register-text .register-text-head{
+	margin: 15px 0;
+}
+.register .register-text .register-text-head p{
+	font-size: 34px;
+	color: #FFFFFF;
+	text-align: center;
+	text-transform: capitalize;
+}
+.register .register-text .register-text-desc p{
+	font-size: 16px;
+	color: #FFFFFF;
+	text-align: center;
+	text-transform: capitalize;
+}
+.register .register-text .register-text-btn{
+	margin-top: 20px;
+	text-align: center;
+}
+.register .register-text .register-text-btn a{
+	font-size: 24px;
+	font-weight: 600;
+	text-transform: capitalize;
+	color: #FFFFFF;
+	padding: 7px 70px;
+	border: 1px solid #ffffff;
+	border-radius: 8px;
+}
+.register-enterprenuer .register .register-form{
+	width: 60%;
+	padding: 0 40px;
+}
+.register .register-form .register-form-head{
+	margin-bottom: 20px;
+}
+.register .register-form .register-form-head p{
+	font-size: 26px;
+	font-weight: 600;
+	color: #222222;
+	text-align: center;
+	text-transform: capitalize;
+}
+.register .register-form .register-form-btns{
+	text-align: center;
+}
+.register .register-form .register-form-btns a{
+	font-size: 18px;
+	color: #222222;
+	text-transform: capitalize;
+	font-weight: 500;
+	border: 1px solid #222222;
+	border-radius: 30px;
+}
+.register .register-form .register-form-btns a.no-active-btn{
+	padding: 1px 10px 4px 0;
+}
+.register .register-form .register-form-btns a.active-btn{
+	padding: 1px 0 4px 10px;
+	margin-left: 20px;
+}
+.register .register-form .register-form-btns a img{
+	vertical-align: middle;
+}
+.register .register-form .register-form-btns a .red-circle{
+	margin-right: 10px;
+}
+.register .register-form .register-form-btns a .tale-circle{
+	margin-left: 10px;
+}
+.register .register-form .register-form-btns a.active{
+	background-color: #C4C4C4;
+}
+.register .register-form .register-form-progress-bar{
+	margin: 25px 0;
+}
+.register .register-form .register-form-progress-bar img{
+	width: 100%;
+}
+.register .register-form .form-group-cont{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	margin-bottom: 15px;
+}
+.register .register-form .form-group-cont .form-group{
+	width: 47%;
+}
+.register .register-form .form-group-cont .form-group label{
+	text-transform: capitalize;
+	font-size: 18px;
+	color: #222222;
+}
+.register .register-form .form-group-cont .form-group .form-control{
+	width: 100%;
+	border: none;
+	outline: none;
+	border-bottom: 2px solid #828282;
+}
+.register .register-form .terms-cond{
+	font-size: 18px;
+	color: #717E95;
+	text-align: center;
+}
+.register .register-form .terms-cond a{
+	color: #EE3A48;
+	font-weight: 600;
+}
+.register .register-form .form-group-cont .submit-btn{
+	width: 90%;
+	margin: 15px auto;
+}
+.register .register-form .form-group-cont .submit-btn button{
+	font-size: 24px;
+	color: #FFFFFF;
+	font-weight: 700;
+	border: none;
+	padding: 7px 0;
+	background-color: #EE3A48;
+	border-radius: 8px;
+	width: 100%;
+	text-transform: capitalize;
+	cursor: pointer;
+}
+
 
 /* Media queries - Responsive timeline on screens less than 600px wide */
 /*Style for different devices*/
@@ -847,6 +997,23 @@ a{
 	.copyright .copyright-text p{
 		font-size: 16px;
 	}
+
+	.register-enterprenuer{
+		margin: 80px 0 20px 0;
+	}
+	.register-enterprenuer .register{
+		width: 95%;
+	}
+	.register-enterprenuer .register .register-text{
+		width: 100%;
+		padding: 30px 0;
+		margin-bottom: 20px;
+	}
+	.register-enterprenuer .register .register-form{
+		width: 100%;
+		padding: 0;
+		margin-top: 20px;
+	}
 }
 
 @media(min-width: 768px) and (max-width:  1023px){
@@ -983,6 +1150,20 @@ a{
 	.footer .links .links-item .links-item-links ul li a{
 		font-size: 16px;
 	}
+
+	.register-enterprenuer .register{
+		width: 90%;
+	}
+	.register-enterprenuer .register .register-text{
+		padding: 0 20px;
+	}
+	.register .register-text .register-text-head p{
+		font-size: 24px;
+	}
+	.register .register-text .register-text-btn{
+		margin-top: 30px;
+	}
+
 
 }
 
