@@ -877,6 +877,140 @@ a{
 	width: 80%;
 }
 
+/*payment.html page styles*/
+.register-enterprenuer .register-form .order-details{
+	width: 110%;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+.register-form .order-details .order-summary{
+	width: 58%;
+}
+.register-form .order-details .order-summary .order-summary-head{
+	border-bottom: 1px solid #828282;
+	padding-bottom: 10px;
+}
+.register-form .order-details .order-summary .order-summary-head p{
+	font-size: 22px;
+	color: #666666;
+	font-weight: 700;
+	text-transform: capitalize;
+}
+.register-form .order-details .order-summary .order-summary-items{
+	width: 100%;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	margin-top: 20px;
+}
+.order-details .order-summary .order-summary-items .order-summary-item{
+	width: 50%;
+	
+}
+.order-details .order-summary .order-summary-items .order-summary-item .order-summary-item-head,
+.order-details .order-summary .order-summary-items .order-summary-item .order-summary-item-desc{
+	font-size: 14px;
+	color: #666666;
+	text-transform: capitalize;
+}
+.order-details .payment-details{
+	width: 40%;
+}
+.order-details .payment-details .payment-details-header{
+	width: 100%;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	align-items: center;
+	border-bottom: 1px solid #828282;
+	background: #FFFFFF;
+	padding: 0 10px;
+	box-shadow: 0px -4px 10px rgba(0, 0, 0, 0.1);
+}
+.order-details .payment-details .payment-details-header p{
+	font-size: 14px;
+	color: #404040;
+	text-transform: capitalize;
+}
+.order-details .payment-details .payment-details-body{
+	width: 100%;
+	padding: 10px;
+	background-color: #FFF4E6;
+	border-bottom: 1px solid #828282;
+}
+.order-details .payment-details .payment-details-body .amount{
+	font-size: 24px;
+	font-weight: 700;
+	color: #000000;
+	margin-bottom: 5px;
+}
+.order-details .payment-details .payment-details-body .amount span{
+	font-size: 14px;
+	color: #828282;
+	margin-right: 5px;
+	text-transform: uppercase;
+}
+.order-details .payment-details .payment-details-body .email{
+	font-size: 14px;
+	color: #404040;
+	font-weight: 600;
+	margin-bottom: 15px;
+}
+.order-details .payment-details .payment-details-body .nin{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	margin-bottom: 10px;
+}
+.order-details .payment-details .payment-details-body .nin p{
+	font-size: 14px;
+	color: #666666;
+}
+.order-details .payment-details .payment-methods{
+	background-color: #F3F1FF;
+}
+.order-details .payment-details .payment-methods button{
+	display: block;
+	border: none;
+	background-color: #F3F1FF;
+	font-size: 14px;
+	font-weight: 600;
+	color: #666666;
+	padding: 15px;
+	width: 100%;
+	text-align: left;
+	cursor: pointer;
+	border-bottom: 1px solid #828282;
+}
+.order-details .payment-details .payment-details-footer .secure-with{
+	width: 90%;
+	font-size: 14px;
+	font-weight: 600;
+	text-align: center;
+	margin: 10px auto;
+	color: #E9A745;
+	text-transform: uppercase;
+	background-color: #000000;
+	border-radius: 3px;
+}
+.order-details .payment-details .payment-details-footer .secure-with img{
+	vertical-align: middle;
+	margin-right: 5px;
+}
+.order-details .payment-details .payment-details-footer .confirm-btn button{
+	display: block;
+	width: 100%;
+	border: none;
+	color: #ffffff;
+	font-size: 24px;
+	font-weight: 700;
+	text-transform: capitalize;
+	padding: 5px 0;
+	border-radius: 8px;
+	cursor: pointer;
+	background-color: #E9A745;
+}
 
 /* Media queries - Responsive timeline on screens less than 600px wide */
 /*Style for different devices*/
@@ -1075,6 +1209,19 @@ a{
 	.register-enterprenuer.login-account .register-text .register-text-btn a{
 		padding: 7px 50px;
 	}
+
+	/*payment.html page styles*/
+	.register-enterprenuer .register-form .order-details{
+		width: 100%;
+	}
+	.register-form .order-details .order-summary{
+		width: 100%;
+		margin-bottom: 20px;
+	}
+	.order-details .payment-details{
+		width: 100%;
+	}
+
 }
 
 @media(min-width: 768px) and (max-width:  1023px){
@@ -1241,6 +1388,14 @@ a{
 	}
 	.register-enterprenuer.login-account .register-text .register-text-btn a{
 		padding: 7px 20px;
+	}
+
+	/*payment.html page styles*/
+	.order-details .order-summary .order-summary-items .order-summary-item .order-summary-item-desc{
+		word-break: break-all;
+	}
+	.order-details .payment-details .payment-details-body .email{
+		word-break: break-all;
 	}
 
 
