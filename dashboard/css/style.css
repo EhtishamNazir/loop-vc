@@ -448,8 +448,188 @@ a{
 
 }
 
+/*profile.html page styles*/
+.main .main-content .profile{
+	width: 100%;
+	background: #FFFFFF;
+	box-shadow: 0px 25px 50px rgba(8, 21, 66, 0.04);
+	border-radius: 3px;
+}
+.profile .profile-header{
+	width: 100%;
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	position: relative;
+	padding: 20px;
+}
+.profile .profile-header .profile-header-edit-btn{
+	position: absolute;
+	top: 15px;
+	right: 20px;
+}
+.profile .profile-header .profile-header-text{
+	padding: 10px 0  0 20px;
+}
+.profile .profile-header .profile-header-text .profile-header-text-name p{
+	font-size: 24px;
+	font-weight: 700;
+	color: #121029;
+}
+.profile .profile-header .profile-header-text .profile-header-text-name p img{
+	vertical-align: middle;
+	margin-right: 5px;
+}
+.profile .profile-header .profile-header-text .profile-header-text-desig{
+	margin: 10px 0;
+}
+.profile .profile-header .profile-header-text .profile-header-text-desig p{
+	font-size: 16px;
+	font-weight: 600;
+	color: #171F46;
+	text-transform: capitalize;
+}
+.profile .profile-header .profile-header-text .profile-header-text-desig p img{
+	vertical-align: middle;
+}
+.profile .profile-header .profile-header-text .profile-header-text-date p{
+	font-size: 14px;
+	color: #92969A;
+}
 
-
+.profile .profile-header .profile-header-text .profile-header-text-btns{
+	margin-top: 15px;
+}
+.profile .profile-header .profile-header-text .profile-header-text-btns a{
+	text-transform: capitalize;
+	font-size: 13px;
+	color: #FFFFFF;
+	letter-spacing: 0.39px;
+	border-radius: 3px;
+	padding: 10px 15px;
+}
+.profile .profile-header .profile-header-text .profile-header-text-btns a img{
+	vertical-align: middle;
+}
+.profile .profile-header .profile-header-text .profile-header-text-btns a.red-bg{
+	background-color: #EE3A48;
+}
+.profile .profile-header .profile-header-text .profile-header-text-btns a.tale-bg{
+	background-color: #138EAA;
+}
+.profile .profile-tabs{
+	overflow: hidden;
+	border: 1px solid #ccc;
+	background-color: #DEE2E6;
+}
+.profile .profile-tabs button{
+	background-color: inherit;
+	float: left;
+	border: none;
+	outline: none;
+	cursor: pointer;
+	padding: 14px 20px;
+	transition: 0.3s;
+	font-size: 14px;
+	color: rgba(126, 133, 142, 0.6);
+	text-transform: uppercase;
+}
+.profile .profile-tabs button:hover {
+  	color: #EE3A48;
+  	font-weight: 600;
+}
+.profile .profile-tabs button.active {
+  color: #EE3A48;
+  font-weight: 600;
+}
+.profile .profile-tab-content{
+	display: none;
+  	padding: 6px 12px;
+  	margin-top: 20px;
+  	box-shadow: 0px 25px 50px rgba(8, 21, 66, 0.04);
+  	border-radius: 3px;
+  	padding: 0 20px;
+}
+.profile .profile-tab-content .profile-body .profile-body-head{
+	border-bottom: 1px solid #E1E0EA;
+	padding-bottom: 10px;
+	margin-bottom: 10px;
+}
+.profile .profile-tab-content .profile-body .profile-body-head p{
+	font-size: 16px;
+	font-weight: 700;
+	color: #121029;
+	text-transform: uppercase;
+}
+.profile .profile-tab-content .profile-body .personal-details{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	padding: 20px 0 0 0;
+}
+.profile .profile-tab-content .profile-body .personal-details-item{
+	width: 50%;
+	display: flex;
+	flex-wrap: wrap;
+	margin-bottom: 30px;
+}
+.profile-body .personal-details-item .personal-details-item-head p{
+	font-size: 16px;
+	color: #121029;
+	text-transform: capitalize;
+}
+.profile-body .personal-details-item .personal-details-item-desc p{
+	font-size: 16px;
+	color: #121029;
+	margin-left: 20px;
+}
+.profile-body .biography-text{
+	padding-bottom: 20px;
+}
+.profile-body .biography-text p{
+	font-size: 15px;
+	color: #121029;
+	line-height: 21px;
+}
+/*Experience Section Styles*/
+.profile-body .experience-item{
+	width: 100%;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	padding-bottom: 20px;
+}
+.profile-body .experience-item .experience-item-company{
+	width: 20%;
+}
+.profile-body .experience-item .experience-item-company .experience-item-company-name{
+	font-size: 18px;
+	font-weight: 700;
+	color: #EE3A48;
+	text-transform: capitalize;
+}
+.profile-body .experience-item .experience-item-company .experience-item-company-date{
+	color: #444444;
+	font-size: 15px;
+	letter-spacing: 0.4px;
+	margin-top: 10px;
+}
+.profile-body .experience-item .experience-item-details{
+	width: 80%;
+}
+.profile-body .experience-item .experience-item-details .experience-item-details-head p{
+	font-size: 18px;
+	font-weight: 700;
+	color: #333333;
+	text-transform: capitalize;
+	margin-bottom: 10px;
+}
+.profile-body .experience-item .experience-item-details .experience-item-details-desc p{
+	font-size: 15px;
+	color: #444444;
+	line-height: 28px;
+	letter-spacing: 0.4px;
+}
 
 /* Media queries - Responsive timeline on screens less than 600px wide */
 /*Style for different devices*/
@@ -579,6 +759,35 @@ a{
 	.notifications-rating .rating{
 		width: 100%;
 	}
+
+	/*profile.html page styles*/
+	.profile .profile-header .profile-header-text{
+		padding: 0;
+	}
+	.profile .profile-tabs button{
+		padding: 14px 5px;
+		font-size: 16px;
+		display: block;
+		width: 100%;
+	}
+	.profile .profile-tab-content .profile-body .profile-body-head p{
+		font-size: 16px;
+	}
+	.profile .profile-tab-content .profile-body .personal-details-item{
+		width: 100%;
+	}
+	.profile-body .personal-details-item .personal-details-item-desc p{
+		margin-left: 10px;
+	}
+	.profile-body .experience-item .experience-item-company{
+		width: 100%;
+		margin-bottom: 20px;
+	}
+	.profile-body .experience-item .experience-item-details{
+		width: 100%;
+	}
+
+
 }
 
 @media(min-width: 768px) and (max-width:  1023px){
