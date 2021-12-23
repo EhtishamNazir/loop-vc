@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Loop VC - Edit Profile</title>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- Custom StyleSheet -->
+  <link rel="stylesheet" href="css/style.css">
+  
+<body>
+<!-- Header Section Starts -->
+<header class="header">
+   <div class="header-main">
+      <div class="logo">
+         <a href="index.html"><img src="img/logo.png" alt="Logo" /></a>
+      </div>
+      <div class="open-nav-menu">
+         <span></span>
+      </div>
+      <div class="menu-overlay">
+      </div>
+      <!-- navigation menu start -->
+      <nav class="nav-menu">
+         <div class="close-nav-menu">
+            <img src="img/close-icon.png" alt="Close Icon">
+         </div>
+         <ul class="menu">
+            <li class="menu-item">
+               <a href="index.html"><img src="img/dashboard-white.png" alt="Dashboard Icon"> dashboard</a>
+            </li>            
+            <li class="menu-item">
+               <a href="profile.html"><img src="img/profile-white.png" alt="Profile Icon"> my profile</a>
+            </li>
+            <li class="menu-item">
+               <a href="portfolio.html"><img src="img/portfolio-white.png" alt="Portfolio Icon"> portfolio</a>
+            </li>
+            <li class="menu-item">
+               <a href="investors.html"><img src="img/investors-white.png" alt="Investors Icon"> investors</a>
+            </li>
+            <li class="menu-item">
+               <a href="messages.html"><img src="img/messages-white.png" alt="Messages Icon"> messages</a>
+            </li>
+            <li class="menu-item">
+               <a href="plan-creator.html"><img src="img/settings-white.png" alt="Settings Icon"> business plan creator</a>
+            </li>
+            <li class="menu-item">
+               <a href="payment-history.html"><img src="img/payment-history-white.png" alt="Settings Icon">payment history</a>
+            </li>
+            <li class="menu-item">
+               <a href="settings.html"><img src="img/settings-white.png" alt="Settings Icon"> settings</a>
+            </li>
+            <li class="menu-item">
+               <a href="#contact">logout</a>
+            </li>
+            <li class="menu-item noti-user-sm">
+               <a href="notifications.html">notifications</a>
+            </li>
+         </ul>
+      </nav>
+      <!-- navigation menu end -->
+      <div class="noti-user">
+         <a href="notifications.html"><img src="img/bell.png" alt="Notification"></a>
+         <a href="profile.html"><img src="img/user.png" alt="User Image">Michael Adewale</a>
+      </div>
+   </div>
+</header>
+<!-- Header Section Ends -->
+
+<!-- Sidebar and Main Section Starts -->
+<section class="sidebar-main">
+  <!-- Sidebar section starts -->
+  <div class="sidebar">
+    <ul class="sidebar-menu">
+      <li>
+        <a href="index.html">
+          <img class="dark" src="img/dashboard.png" alt="Dashboard Icon">
+          <img class="light" src="img/dashboard-white.png" alt="Dashboard Icon">dashboard
+        </a>
+      </li>
+      <li>
+        <a href="profile.html" class="active">
+          <img src="img/profile.png" class="dark" alt="Profile Icon">
+          <img src="img/profile-white.png" class="light" alt="Profile Icon">my profile
+        </a>
+      </li>
+      <li>
+        <a href="portfolio.html">
+          <img src="img/portfolio.png" class="dark" alt="Portfolio Icon">
+          <img src="img/portfolio-white.png" class="light" alt="Portfolio Icon">portfolio
+        </a>
+      </li>
+      <li>
+        <a href="investors.html">
+          <img src="img/investors.png" class="dark" alt="Investors Icon">
+          <img src="img/investors-white.png" class="light" alt="Investors Icon">investors
+        </a>
+      </li>
+      <li>
+        <a href="messages.html">
+          <img src="img/messages.png" class="dark" alt="Messages Icon">
+          <img src="img/messages-white.png" class="light" alt="Messages Icon">messages
+        </a>
+      </li>
+      <li>
+        <a href="plan-creator.html">
+          <img src="img/settings.png" class="dark" alt="Settings Icon">
+          <img src="img/settings-white.png" class="light" alt="Settings Icon">business plan creator
+        </a>
+      </li>
+      <li>
+        <a href="settings.html">
+          <img src="img/payment-history.png" class="dark" alt="Settings Icon">
+          <img src="img/payment-history-white.png" class="light" alt="payment History Icon">payment history
+        </a>
+      </li>
+      <li>
+        <a href="settings.html">
+          <img src="img/settings.png" class="dark" alt="Settings Icon">
+          <img src="img/settings-white.png" class="light" alt="Settings Icon">settings
+        </a>
+      </li>
+      <li><a href="logout.html"><img src="img/logout.png" alt="Logout Icon">logout</a></li>
+    </ul>
+  </div>
+  <!-- Sidebar section ends -->
+
+  <!-- Main section starts -->
+  <div class="main">
+    <div class="main-content">
+      <div class="profile">
+        <div class="profile-tabs">
+          <button class="tab-link active" onclick="openProfile(event, 'profile')">profile</button>
+          <button class="tab-link" onclick="openProfile(event, 'experience')">work experience</button>
+          <button class="tab-link" onclick="openProfile(event, 'qualification')">academic qualification</button>
+        </div>
+        <div id="profile" class="profile-tab-content" style="display: block;">
+          <div class="profile-body">
+            <div class="profile-body-head">
+              <p>personal information</p>
+            </div>
+            <div class="edit-profile">
+              <div class="edit-profile-head">
+                <div class="edit-profile-head-img">
+                  <img src="img/profile-7.png" alt="Profile" />
+                </div>
+                <div class="edit-profile-head-bio">
+                  <form action="">
+                    <textarea class="bio" rows="4">Enter Bio</textarea>
+                </div>
+                <div class="edit-profile-body">
+                  <div class="edit-profile-body-item">
+                    <label for="">full name</label>
+                    <input type="text" value="Michael Adewale" autofocus />
+                  </div>
+                  <div class="edit-profile-body-item">
+                    <label for="">email</label>
+                    <input type="email" value="Michaelwale@gmail.com" autofocus />
+                  </div>
+                  <div class="edit-profile-body-item">
+                    <label for="">phone number</label>
+                    <input type="text" value="+234-8137640768" autofocus />
+                  </div>
+                  <div class="edit-profile-body-item">
+                    <label for="">date of birth</label>
+                    <input type="text" value="02 April 1989" autofocus />
+                  </div>
+                  <div class="edit-profile-body-item">
+                    <label for="">location</label>
+                    <input type="text" value="FCT Nigeria" autofocus />
+                  </div>
+                  <div class="edit-profile-body-item">
+                    <label for="">language</label>
+                    <input type="text" value="English, Yoruba, Hausa" autofocus />
+                  </div>
+                  <div class="edit-profile-body-btns">
+                    <button type="submit">save</button>
+                    <button class="bg-grey" type="reset">discard</button>
+                  </div>
+                </form>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div id="experience" class="profile-tab-content">
+          <div class="profile-body">
+            <div class="edit-profile">
+              <div class="edit-profile-body">
+                  <div class="edit-profile-body-item">
+                    <label for="">company name</label>
+                    <input type="text" value="Example Solutions Ltd" autofocus />
+                  </div>
+                  <div class="edit-profile-body-item">
+                    <label for="">location</label>
+                    <input type="text" value="Abuja, Nigeria" />
+                  </div>
+                  <div class="edit-profile-body-item">
+                    <label for="">start date</label>
+                    <input type="text" value="June - 2016" />
+                  </div>
+                  <div class="edit-profile-body-item">
+                    <label for="">end date</label>
+                    <input type="text" value="I Still Study There" />
+                  </div>
+                  <div class="edit-profile-body-item">
+                    <label for="">job function</label>
+                    <input type="text" value="Software Engineer" />
+                  </div>
+                  <div class="edit-profile-body-item">
+                    <label for="">duties</label>
+                    <textarea name="" id="" rows="8"></textarea>
+                  </div>
+                  <div class="edit-profile-body-btns">
+                    <button type="submit">save</button>
+                    <button class="bg-grey" type="reset">discard</button>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div id="qualification" class="profile-tab-content">
+          <div class="profile-body">
+            <div class="edit-profile">
+              <div class="edit-profile-body">
+                  <div class="edit-profile-body-item">
+                    <label for="">school name</label>
+                    <input type="text" value="Example Solutions Ltd" autofocus />
+                  </div>
+                  <div class="edit-profile-body-item">
+                    <label for="">location</label>
+                    <input type="text" value="Abuja, Nigeria" />
+                  </div>
+                  <div class="edit-profile-body-item">
+                    <label for="">start date</label>
+                    <input type="text" value="June - 2016" />
+                  </div>
+                  <div class="edit-profile-body-item">
+                    <label for="">end date</label>
+                    <input type="text" value="I Still Study There" />
+                  </div>
+                  <div class="edit-profile-body-item">
+                    <label for="">degree</label>
+                    <input type="text" value="Bsc Mathematics" />
+                  </div>
+                  <div class="edit-profile-body-item">
+                    <label for="">additional info</label>
+                    <textarea name="" id="" rows="8"></textarea>
+                  </div>
+                  <div class="edit-profile-body-btns">
+                    <button type="submit">save</button>
+                    <button class="bg-grey" type="reset">discard</button>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Main section ends -->
+</section>
+
+  <script src="js/script.js"></script>
+  <!-- Include jQuery -->
+  <script src="js/jquery-2.2.4.min.js"></script>
+  <script type="text/javascript">
+    
+  </script>
+</body>
+</html>
+
+
+
+
+
+
+

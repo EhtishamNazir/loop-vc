@@ -631,6 +631,77 @@ a{
 	letter-spacing: 0.4px;
 }
 
+/*edit-profile.html page start*/
+.profile-body .edit-profile .edit-profile-head{
+	width: 100%;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	align-items: center;
+}
+.profile-body .edit-profile .edit-profile-head .edit-profile-head-img{
+	width: 23%;
+}
+.profile-body .edit-profile .edit-profile-head .edit-profile-head-bio{
+	width: 77%;
+}
+.profile-body .edit-profile .edit-profile-head .edit-profile-head-bio .bio{
+	width: 100%;
+	border: none;
+	outline: none;
+	border: 3px dashed #000000;
+	font-size: 18px;
+	padding: 10px 20px;
+	color: #475F7B;
+}
+.profile-body .edit-profile .edit-profile-body{
+	width: 100%;
+	margin: 30px 0;
+}
+.profile-body .edit-profile .edit-profile-body .edit-profile-body-item{
+	width: 100%;
+	padding-bottom: 10px;
+	margin-bottom: 15px;
+	display: flex;
+	flex-wrap: wrap;
+	border-bottom: 1px solid #D5DFEA;
+}
+.profile-body .edit-profile .edit-profile-body .edit-profile-body-item label{
+	width: 25%;
+	font-size: 16px;
+	text-transform: capitalize;
+	color: #828282;
+}
+.profile-body .edit-profile .edit-profile-body .edit-profile-body-item input{
+	width: 75%;
+	border: none;
+	font-size: 16px;
+	color: #828282;
+	outline: none;
+}
+.profile-body .edit-profile .edit-profile-body .edit-profile-body-item textarea{
+	width: 74%;
+}
+.profile-body .edit-profile .edit-profile-body .edit-profile-body-btns{
+	width: 100%;
+	margin-top: 30px;
+	text-align: center;
+}
+.profile-body .edit-profile .edit-profile-body .edit-profile-body-btns button{
+	font-size: 16px;
+	font-weight: 600;
+	color: #ffffff;
+	border-radius: 30px;
+	background-color: #EE3A48;
+	border: none;
+	padding: 10px 30px;
+	margin-right: 10px;
+	text-transform: capitalize;
+	cursor: pointer;
+}
+.profile-body .edit-profile .edit-profile-body .edit-profile-body-btns button.bg-grey{
+	background-color: #C9C9C0;
+}
 /* Media queries - Responsive timeline on screens less than 600px wide */
 /*Style for different devices*/
 @media(max-width: 767px){
@@ -765,10 +836,11 @@ a{
 		padding: 0;
 	}
 	.profile .profile-tabs button{
-		padding: 14px 5px;
+		padding: 10px 5px;
 		font-size: 16px;
 		display: block;
 		width: 100%;
+		border: 1px solid #EE3A48;
 	}
 	.profile .profile-tab-content .profile-body .profile-body-head p{
 		font-size: 16px;
@@ -787,6 +859,27 @@ a{
 		width: 100%;
 	}
 
+	/*Edit profile.html page styles*/
+	.profile-body .edit-profile .edit-profile-head .edit-profile-head-img{
+		width: 100%;
+		margin-bottom: 10px;
+	}
+	.profile-body .edit-profile .edit-profile-head .edit-profile-head-bio{
+		width: 100%;
+	}
+	.profile-body .edit-profile .edit-profile-body .edit-profile-body-item label{
+		width: 35%;
+	}
+	.profile-body .edit-profile .edit-profile-body .edit-profile-body-item input{
+		width: 65%;
+	}
+	.profile-body .edit-profile .edit-profile-body .edit-profile-body-item textarea{
+		width: 100%;
+		margin-top: 10px;
+	}
+	.profile-body .edit-profile .edit-profile-body .edit-profile-body-btns{
+		padding-bottom: 20px;
+	}
 
 }
 
