@@ -49,6 +49,11 @@ a{
 .bg-white{
 	background-color: #FFFFFF;
 }
+.table-responsive{
+	overflow-x: auto;
+}
+
+
 /*header section Starts*/
 .header{
 	width: 100%;
@@ -1001,6 +1006,76 @@ a{
 	vertical-align: middle;
 	margin-right: 10px;
 }
+.portfolio .portfolio-details{
+	width: 100%;
+}
+.portfolio .portfolio-details table{
+	width: 100%;
+}
+.portfolio .portfolio-details table th{
+	font-size: 13px;
+	font-weight: 600;
+	color: #7E858E;
+	text-transform: uppercase;
+	border-bottom: 1px solid #D7DFE9;
+	padding: 10px 15px;
+	/*text-align: left;*/
+}
+.portfolio .portfolio-details table td{
+	font-size: 15px;
+	color: #8E8E8E;
+	text-align: center;
+	padding: 7px 0;
+	text-transform: capitalize;
+}
+.portfolio .portfolio-details table td.img-text{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	text-align: left;
+
+}
+.portfolio .portfolio-details table td .img{
+	width: 24%;
+	height: 40px;
+	background-color: #4D00CA;
+	color: #ffffff;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border-radius: 4px;
+	font-size: 16px;
+	text-transform: uppercase;
+	font-weight: 700;
+}
+.portfolio .portfolio-details table td .name-text{
+	width: 73%;
+	font-size: 16px;
+	color: #171F46;
+	font-weight: 600;
+}
+.portfolio .portfolio-details table td.reading-numb{
+	color: #138EAA;
+	font-weight: 700;
+}
+.portfolio .portfolio-details table td.open-numb{
+	color: #EE3A48;
+	font-weight: 700;
+}
+.portfolio .portfolio-details table td .status-completed{
+	color: #ffffff;
+	background-color: #2DCA73;
+	border-radius: 160px;
+	text-transform: capitalize;
+	padding: 2px 10px;
+}
+.portfolio .portfolio-details table td .status-reading{
+	color: #ffffff;
+	background-color: #EE3A48;
+	border-radius: 160px;
+	text-transform: capitalize;
+	padding: 2px 10px;
+}
 
 
 /* Media queries - Responsive timeline on screens less than 600px wide */
@@ -1211,6 +1286,14 @@ a{
 	.portfolio .portfolio-items .portfolio-item{
 		width: 100%;
 	}
+	.portfolio .portfolio-details table td.img-text{
+		width: 200px;
+	}
+	.portfolio .portfolio-details table td .desc{
+		width: 300px;
+		text-align: left;
+	}
+
 
 }
 
@@ -1326,6 +1409,12 @@ a{
 	.portfolio .portfolio-items .portfolio-item{
 		width: 48%;
 	}
+	.portfolio .portfolio-details table td.img-text{
+		width: 200px;
+	}
+	.portfolio .portfolio-details table td .desc{
+		width: 250px;
+	}
 
 }
 
@@ -1387,5 +1476,11 @@ a{
 	/*portfolio.html page styles*/
 	.portfolio .portfolio-items .portfolio-item{
 		width: 48%;
+	}
+	.portfolio .portfolio-details table td.img-text{
+		width: 200px;
+	}
+	.portfolio .portfolio-details table td .desc{
+		width: 250px;
 	}
 }
