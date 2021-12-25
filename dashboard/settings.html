@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Loop VC - Edit Profile</title>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- Custom StyleSheet -->
+  <link rel="stylesheet" href="css/style.css">
+  
+<body>
+<!-- Header Section Starts -->
+<header class="header">
+   <div class="header-main">
+      <div class="logo">
+         <a href="index.html"><img src="img/logo.png" alt="Logo" /></a>
+      </div>
+      <div class="open-nav-menu">
+         <span></span>
+      </div>
+      <div class="menu-overlay">
+      </div>
+      <!-- navigation menu start -->
+      <nav class="nav-menu">
+         <div class="close-nav-menu">
+            <img src="img/close-icon.png" alt="Close Icon">
+         </div>
+         <ul class="menu">
+            <li class="menu-item">
+               <a href="index.html"><img src="img/dashboard-white.png" alt="Dashboard Icon"> dashboard</a>
+            </li>            
+            <li class="menu-item">
+               <a href="profile.html"><img src="img/profile-white.png" alt="Profile Icon"> my profile</a>
+            </li>
+            <li class="menu-item">
+               <a href="portfolio.html"><img src="img/portfolio-white.png" alt="Portfolio Icon"> portfolio</a>
+            </li>
+            <li class="menu-item">
+               <a href="investors.html"><img src="img/investors-white.png" alt="Investors Icon"> investors</a>
+            </li>
+            <li class="menu-item">
+               <a href="messages.html"><img src="img/messages-white.png" alt="Messages Icon"> messages</a>
+            </li>
+            <li class="menu-item">
+               <a href="plan-creator.html"><img src="img/settings-white.png" alt="Settings Icon"> business plan creator</a>
+            </li>
+            <li class="menu-item">
+               <a href="payment-history.html"><img src="img/payment-history-white.png" alt="Settings Icon">payment history</a>
+            </li>
+            <li class="menu-item">
+               <a href="settings.html"><img src="img/settings-white.png" alt="Settings Icon"> settings</a>
+            </li>
+            <li class="menu-item">
+               <a href="#contact">logout</a>
+            </li>
+            <li class="menu-item noti-user-sm">
+               <a href="notifications.html">notifications</a>
+            </li>
+         </ul>
+      </nav>
+      <!-- navigation menu end -->
+      <div class="noti-user">
+         <a href="notifications.html"><img src="img/bell.png" alt="Notification"></a>
+         <a href="profile.html"><img src="img/user.png" alt="User Image">Michael Adewale</a>
+      </div>
+   </div>
+</header>
+<!-- Header Section Ends -->
+
+<!-- Sidebar and Main Section Starts -->
+<section class="sidebar-main">
+  <!-- Sidebar section starts -->
+  <div class="sidebar">
+    <ul class="sidebar-menu">
+      <li>
+        <a href="index.html">
+          <img class="dark" src="img/dashboard.png" alt="Dashboard Icon">
+          <img class="light" src="img/dashboard-white.png" alt="Dashboard Icon">dashboard
+        </a>
+      </li>
+      <li>
+        <a href="profile.html">
+          <img src="img/profile.png" class="dark" alt="Profile Icon">
+          <img src="img/profile-white.png" class="light" alt="Profile Icon">my profile
+        </a>
+      </li>
+      <li>
+        <a href="portfolio.html">
+          <img src="img/portfolio.png" class="dark" alt="Portfolio Icon">
+          <img src="img/portfolio-white.png" class="light" alt="Portfolio Icon">portfolio
+        </a>
+      </li>
+      <li>
+        <a href="investors.html">
+          <img src="img/investors.png" class="dark" alt="Investors Icon">
+          <img src="img/investors-white.png" class="light" alt="Investors Icon">investors
+        </a>
+      </li>
+      <li>
+        <a href="messages.html">
+          <img src="img/messages.png" class="dark" alt="Messages Icon">
+          <img src="img/messages-white.png" class="light" alt="Messages Icon">messages
+        </a>
+      </li>
+      <li>
+        <a href="plan-creator.html">
+          <img src="img/settings.png" class="dark" alt="Settings Icon">
+          <img src="img/settings-white.png" class="light" alt="Settings Icon">business plan creator
+        </a>
+      </li>
+      <li>
+        <a href="settings.html">
+          <img src="img/payment-history.png" class="dark" alt="Settings Icon">
+          <img src="img/payment-history-white.png" class="light" alt="payment History Icon">payment history
+        </a>
+      </li>
+      <li>
+        <a href="settings.html" class="active">
+          <img src="img/settings.png" class="dark" alt="Settings Icon">
+          <img src="img/settings-white.png" class="light" alt="Settings Icon">settings
+        </a>
+      </li>
+      <li><a href="logout.html"><img src="img/logout.png" alt="Logout Icon">logout</a></li>
+    </ul>
+  </div>
+  <!-- Sidebar section ends -->
+
+  <!-- Main section starts -->
+  <div class="main">
+    <div class="main-content">
+      <div class="profile">
+        <div class="profile-tabs">
+          <button class="tab-link active" onclick="openProfile(event, 'profile')">notification settings</button>
+          <button class="tab-link" onclick="openProfile(event, 'experience')">change password</button>
+        </div>
+        <div id="profile" class="profile-tab-content" style="display: block;">
+          <div class="profile-body">
+            <div class="notification-settings">
+              <div class="notification-settings-item">
+                <div class="notification-settings-item-text">
+                  <p>Anyone send me a message</p>
+                </div>
+                <div class="notification-settings-item-checkbox">
+                  <form>
+                    <input type="checkbox" id="fruit1" name="fruit-1" value="Apple">
+                    <label for="fruit1"></label>
+                  </form>
+                </div>
+              </div>
+              <div class="notification-settings-item">
+                <div class="notification-settings-item-text">
+                  <p>Anyone seeing my profile page</p>
+                </div>
+                <div class="notification-settings-item-checkbox">
+                  <form>
+                    <input type="checkbox" id="fruit1" name="fruit-1" value="Apple">
+                    <label for="fruit1"></label>
+                  </form>
+                </div>
+              </div>
+              <div class="notification-settings-item">
+                <div class="notification-settings-item-text">
+                  <p>Anyone posts a comment on my post</p>
+                </div>
+                <div class="notification-settings-item-checkbox">
+                  <form>
+                    <input type="checkbox" id="fruit1" name="fruit-1" value="Apple">
+                    <label for="fruit1"></label>
+                  </form>
+                </div>
+              </div>
+              <div class="notification-settings-item">
+                <div class="notification-settings-item-text">
+                  <p>Anyone send me a message</p>
+                </div>
+                <div class="notification-settings-item-checkbox">
+                  <form>
+                    <input type="checkbox" id="fruit1" name="fruit-1" value="Apple">
+                    <label for="fruit1"></label>
+                  </form>
+                </div>
+              </div>
+              <div class="notification-settings-item">
+                <div class="notification-settings-item-text">
+                  <p>Anyone send me a message</p>
+                </div>
+                <div class="notification-settings-item-checkbox">
+                  <form>
+                    <input type="checkbox" id="fruit1" name="fruit-1" value="Apple">
+                    <label for="fruit1"></label>
+                  </form>
+                </div>
+              </div>
+              <div class="notification-settings-item">
+                <div class="notification-settings-item-text">
+                  <p>Anyone seeing my profile page</p>
+                </div>
+                <div class="notification-settings-item-checkbox">
+                  <form>
+                    <input type="checkbox" id="fruit1" name="fruit-1" value="Apple">
+                    <label for="fruit1"></label>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div id="experience" class="profile-tab-content">
+          <div class="profile-body">
+            <div class="set-password">
+              <form action="">
+                <div class="form-group-cont">
+                  <div class="form-group">
+                    <label for="">password</label>
+                    <input type="password" class="form-control" />
+                  </div>
+                  <div class="form-group">
+                    <label for="">confirm password</label>
+                    <input type="password" class="form-control" />
+                  </div>
+                </div>
+                <div class="set-password-btn">
+                  <button type="submit">save</button>
+                  <button type="reset" class="grey-bg">discard</button>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Main section ends -->
+</section>
+
+  <script src="js/script.js"></script>
+  <!-- Include jQuery -->
+  <script src="js/jquery-2.2.4.min.js"></script>
+  <script type="text/javascript">
+    
+  </script>
+</body>
+</html>
+
+
+
+
+
+
+
