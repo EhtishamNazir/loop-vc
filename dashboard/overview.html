@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Loop VC - Portfolio</title>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- Custom StyleSheet -->
+  <link rel="stylesheet" href="css/style.css">
+  
+<body>
+<!-- Header Section Starts -->
+<header class="header">
+   <div class="header-main">
+      <div class="logo">
+         <a href="index.html"><img src="img/logo.png" alt="Logo" /></a>
+      </div>
+      <div class="open-nav-menu">
+         <span></span>
+      </div>
+      <div class="menu-overlay">
+      </div>
+      <!-- navigation menu start -->
+      <nav class="nav-menu">
+         <div class="close-nav-menu">
+            <img src="img/close-icon.png" alt="Close Icon">
+         </div>
+         <ul class="menu">
+            <li class="menu-item">
+               <a href="index.html"><img src="img/dashboard-white.png" alt="Dashboard Icon"> dashboard</a>
+            </li>            
+            <li class="menu-item">
+               <a href="profile.html"><img src="img/profile-white.png" alt="Profile Icon"> my profile</a>
+            </li>
+            <li class="menu-item">
+               <a href="portfolio.html"><img src="img/portfolio-white.png" alt="Portfolio Icon"> portfolio</a>
+            </li>
+            <li class="menu-item">
+               <a href="investors.html"><img src="img/investors-white.png" alt="Investors Icon"> investors</a>
+            </li>
+            <li class="menu-item">
+               <a href="messages.html"><img src="img/messages-white.png" alt="Messages Icon"> messages</a>
+            </li>
+            <li class="menu-item">
+               <a href="plan-creator.html"><img src="img/settings-white.png" alt="Settings Icon"> business plan creator</a>
+            </li>
+            <li class="menu-item">
+               <a href="payment-history.html"><img src="img/payment-history-white.png" alt="Settings Icon">payment history</a>
+            </li>
+            <li class="menu-item">
+               <a href="settings.html"><img src="img/settings-white.png" alt="Settings Icon"> settings</a>
+            </li>
+            <li class="menu-item">
+               <a href="#contact">logout</a>
+            </li>
+            <li class="menu-item noti-user-sm">
+               <a href="notifications.html">notifications</a>
+            </li>
+         </ul>
+      </nav>
+      <!-- navigation menu end -->
+      <div class="noti-user">
+         <a href="notifications.html"><img src="img/bell.png" alt="Notification"></a>
+         <a href="profile.html"><img src="img/user.png" alt="User Image">Michael Adewale</a>
+      </div>
+   </div>
+</header>
+<!-- Header Section Ends -->
+
+<!-- Sidebar and Main Section Starts -->
+<section class="sidebar-main">
+  <!-- Sidebar section starts -->
+  <div class="sidebar">
+    <ul class="sidebar-menu">
+      <li>
+        <a href="index.html">
+          <img class="dark" src="img/dashboard.png" alt="Dashboard Icon">
+          <img class="light" src="img/dashboard-white.png" alt="Dashboard Icon">dashboard
+        </a>
+      </li>
+      <li>
+        <a href="profile.html">
+          <img src="img/profile.png" class="dark" alt="Profile Icon">
+          <img src="img/profile-white.png" class="light" alt="Profile Icon">my profile
+        </a>
+      </li>
+      <li>
+        <a href="portfolio.html" class="active">
+          <img src="img/portfolio.png" class="dark" alt="Portfolio Icon">
+          <img src="img/portfolio-white.png" class="light" alt="Portfolio Icon">portfolio
+        </a>
+      </li>
+      <li>
+        <a href="investors.html">
+          <img src="img/investors.png" class="dark" alt="Investors Icon">
+          <img src="img/investors-white.png" class="light" alt="Investors Icon">investors
+        </a>
+      </li>
+      <li>
+        <a href="messages.html">
+          <img src="img/messages.png" class="dark" alt="Messages Icon">
+          <img src="img/messages-white.png" class="light" alt="Messages Icon">messages
+        </a>
+      </li>
+      <li>
+        <a href="plan-creator.html">
+          <img src="img/settings.png" class="dark" alt="Settings Icon">
+          <img src="img/settings-white.png" class="light" alt="Settings Icon">business plan creator
+        </a>
+      </li>
+      <li>
+        <a href="settings.html">
+          <img src="img/payment-history.png" class="dark" alt="Settings Icon">
+          <img src="img/payment-history-white.png" class="light" alt="payment History Icon">payment history
+        </a>
+      </li>
+      <li>
+        <a href="settings.html">
+          <img src="img/settings.png" class="dark" alt="Settings Icon">
+          <img src="img/settings-white.png" class="light" alt="Settings Icon">settings
+        </a>
+      </li>
+      <li><a href="logout.html"><img src="img/logout.png" alt="Logout Icon">logout</a></li>
+    </ul>
+  </div>
+  <!-- Sidebar section ends -->
+
+  <!-- Main section starts -->
+  <div class="main">
+    <div class="main-content">
+      <div class="profile">
+        <div class="overview-head">
+          <div class="overview-head-img">rm</div>
+          <div class="overview-head-text">
+            <p>Solar Rice Seeding Machine</p>
+          </div>
+        </div>
+        <div class="profile-tabs">
+          <button class="tab-link active" onclick="openProfile(event, 'overview')">overview</button>
+          <button class="tab-link" onclick="openProfile(event, 'content')">content</button>
+          <button class="tab-link" onclick="openProfile(event, 'timeline')">timeline</button>
+          <button class="tab-link" onclick="openProfile(event, 'conversations')">conversations</button>
+          <button class="tab-link" onclick="openProfile(event, 'files')">files</button>
+        </div>
+        <div id="overview" class="profile-tab-content">
+          <div class="profile-body">
+              <div class="overview-details">
+                <div class="overview-details-text">
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Purus sed commodo amet fermentum. Convallis at est vitae, non at. Vitae cum tellus elit aliquam, massa duis sed ac. Nam gravida auctor blandit facilisis pellentesque quis leo augue. Integer imperdiet pulvinar viverra amet nullam fermentum nec, tortor. Malesuada nulla scelerisque volutpat, fames augue faucibus in. Libero sem semper quis at vitae. Et pellentesque malesuada leo sit libero vitae id. Sit bibendum pellentesque urna suscipit pellentesque. At dui cras elit sollicitudin est amet viverra a. Non nisl odio lacus habitasse.</p>
+                  <p>Scelerisque amet, condimentum ultrices sed consectetur ac cras. Ac elementum nec a duis platea. Nulla sed sit ipsum gravida cras faucibus egestas. Id ac habitant vivamus in. Sem congue nullam in non risus, aliquet enim nisi, non. Amet etiam quisque eget diam convallis. Aliquet duis mauris porttitor curabitur in purus. Odio consequat lacus, egestas tempor eu. Ornare tortor condimentum eu cursus vitae cras. Pellentesque aliquam malesuada id in. A aliquam id tincidunt arcu auctor purus. Nulla ut felis nulla eleifend. Amet tortor diam auctor volutpat integer condimentum commodo nunc. Risus pulvinar ultrices non viverra. Nunc sed velit id bibendum et in malesuada est, nullam. </p>
+                  <p>Donec nec risus felis sed. Donec habitasse mauris commodo, nisl cras justo. Aliquam vitae dictumst eget dignissim dui euismod elementum dui. Sapien accumsan nulla ultrices volutpat aliquam commodo. Risus, sit dui dignissim in mauris eget donec mi, consequat. Orci nec tincidunt at suscipit. Massa in viverra purus ullamcorper gravida tellus, vitae tellus massa. Molestie quam rhoncus facilisis viverra aliquam nibh convallis quam. Auctor a vulputate aliquam feugiat tristique enim tristique in tristique. Tempus rhoncus at amet nunc in turpis. Ut nunc at justo, mauris. Et, cras sed porttitor quis arcu vivamus risus proin.</p>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed est nunc sollicitudin id pellentesque sollicitudin semper in. Elementum semper enim, sit eu cursus faucibus ut amet, suspendisse. Parturient egestas odio enim ultricies. Vitae dis sit et auctor enim. Lectus sed quis eros, nulla quisque eleifend. Ultricies consequat tellus, volutpat fusce rhoncus ullamcorper. </p>
+                </div>
+                <div class="overview-details-graph">
+                  <div id="piechart"></div>
+                </div>
+              </div> 
+          </div>
+        </div>
+        <div id="content" class="profile-tab-content">
+          <div class="profile-body">
+            <div class="content-details">
+              <div class="content-details-head">
+                <p>Abstract & figures</p>
+              </div>
+              <div class="content-details-desc">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Purus sed commodo amet fermentum. Convallis at est vitae, non at. Vitae cum tellus elit aliquam, massa duis sed ac. Nam gravida auctor blandit facilisis pellentesque quis leo augue. Integer imperdiet pulvinar viverra amet nullam fermentum nec, tortor. Malesuada nulla scelerisque volutpat, fames augue faucibus in. Libero sem semper quis at vitae. Et pellentesque malesuada leo sit libero vitae id. Sit bibendum pellentesque urna suscipit pellentesque. At dui cras elit sollicitudin est amet viverra a. Non nisl odio lacus habitasse.</p>
+                <p>Scelerisque amet, condimentum ultrices sed consectetur ac cras. Ac elementum nec a duis platea. Nulla sed sit ipsum gravida cras faucibus egestas. Id ac habitant vivamus in. Sem congue nullam in non risus, aliquet enim nisi, non. Amet etiam quisque eget diam convallis. Aliquet duis mauris porttitor curabitur in purus. Odio consequat lacus, egestas tempor eu. Ornare tortor condimentum eu cursus vitae cras. Pellentesque aliquam malesuada id in. A aliquam id tincidunt arcu auctor purus. Nulla ut felis nulla eleifend. Amet tortor diam auctor volutpat integer condimentum commodo nunc. Risus pulvinar ultrices non viverra. Nunc sed velit id bibendum et in malesuada est, nullam.</p>
+              </div>
+              <div class="content-details-imgs">
+                <div class="content-details-imgs-item">
+                  <img src="img/content-img-1.png" alt="Content Img">
+                </div>
+                <div class="content-details-imgs-item">
+                  <img src="img/content-img-2.png" alt="Content Img">
+                </div>
+                <div class="content-details-imgs-item">
+                  <img src="img/content-img-3.png" alt="Content Img">
+                </div>
+                <div class="content-details-imgs-item">
+                  <img src="img/content-img-4.png" alt="Content Img">
+                </div>
+              </div>
+            </div>
+            <div class="content-details">
+              <div class="content-details-head">
+                <p>full text</p>
+              </div>
+              <div class="content-details-desc">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Purus sed commodo amet fermentum. Convallis at est vitae, non at. Vitae cum tellus elit aliquam, massa duis sed ac. Nam gravida auctor blandit facilisis pellentesque quis leo augue. Integer imperdiet pulvinar viverra amet nullam fermentum nec, tortor. Malesuada nulla scelerisque volutpat, fames augue faucibus in. Libero sem semper quis at vitae. Et pellentesque malesuada leo sit libero vitae id. Sit bibendum pellentesque urna suscipit pellentesque. At dui cras elit sollicitudin est amet viverra a. Non nisl odio lacus habitasse.</p>
+                <p>Scelerisque amet, condimentum ultrices sed consectetur ac cras. Ac elementum nec a duis platea. Nulla sed sit ipsum gravida cras faucibus egestas. Id ac habitant vivamus in. Sem congue nullam in non risus, aliquet enim nisi, non. Amet etiam quisque eget diam convallis. Aliquet duis mauris porttitor curabitur in purus. Odio consequat lacus, egestas tempor eu. Ornare tortor condimentum eu cursus vitae cras. Pellentesque aliquam malesuada id in. A aliquam id tincidunt arcu auctor purus. Nulla ut felis nulla eleifend. Amet tortor diam auctor volutpat integer condimentum commodo nunc. Risus pulvinar ultrices non viverra. Nunc sed velit id bibendum et in malesuada est, nullam.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div id="timeline" class="profile-tab-content">
+          <div class="profile-body">
+            
+          </div>
+        </div>
+        <div id="conversations" class="profile-tab-content" style="display: block;">
+          <div class="profile-body">
+            <div class="conversation-details">
+              <div class="conversations-head">
+                <p>Abstract & figures</p>
+              </div>
+              <div class="item-left">
+                <div class="message-left">
+                  <div class="item-left-img">
+                    <img src="img/profile-9.png" alt="User Image">
+                  </div>
+                  <div class="item-left-text">
+                    <p>Nulla vitae elit libero, a pharetra augue. Aenean lacinia bibendum nulla sed consectetur. Morbi leo risus, porta ac consectetur ac, vestibulum at eros.</p>
+                    <p class="time">8:35 am</p>
+                  </div>
+                </div>
+                <div class="space-left">
+                  
+                </div>
+              </div>
+              <div class="item-right">
+                <div class="space-right">
+                  
+                </div>
+                <div class="message-right">
+                  <div class="item-right-text">
+                    <p>Nulla vitae elit libero, a pharetra augue. Aenean lacinia bibendum nulla sed consectetur. Morbi leo risus, porta ac consectetur ac, vestibulum at eros.</p>
+                    <p class="time">8:35 am</p>
+                  </div>
+                  <div class="item-right-img">
+                    <img src="img/profile-9.png" alt="User Image">
+                  </div>
+                </div>
+              </div>
+              <div class="item-left">
+                <div class="message-left">
+                  <div class="item-left-img">
+                    <img src="img/profile-9.png" alt="User Image">
+                  </div>
+                  <div class="item-left-text">
+                    <p>Nulla vitae elit libero, a pharetra augue. Aenean lacinia bibendum nulla sed consectetur. Morbi leo risus, porta ac consectetur ac, vestibulum at eros.</p>
+                    <p class="time">8:35 am</p>
+                  </div>
+                </div>
+                <div class="space-left">
+                  
+                </div>
+              </div>
+              <div class="item-right">
+                <div class="space-right">
+                  
+                </div>
+                <div class="message-right">
+                  <div class="item-right-text">
+                    <p>Nulla vitae elit libero, a pharetra augue. Aenean lacinia bibendum nulla sed consectetur. Morbi leo risus, porta ac consectetur ac, vestibulum at eros.</p>
+                    <p class="time">8:35 am</p>
+                  </div>
+                  <div class="item-right-img">
+                    <img src="img/profile-9.png" alt="User Image">
+                  </div>
+                </div>
+              </div>
+              <form action="">
+              <div class="send-message">
+                <div class="image-upload">
+                  <label for="file-input">
+                    <img src="img/file-icon.png" />
+                  </label>
+
+                  <input id="file-input" type="file" />
+                </div>
+                <div class="message-text">
+                  <input type="text" placeholder="Type message here...">
+                </div>
+                <div class="send-btn">
+                  <button type="submit"><img src="img/send.png" alt=""></button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div id="files" class="profile-tab-content">
+          <div class="profile-body">
+            
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Main section ends -->
+</section>
+
+	<script src="js/script.js"></script>
+	<!-- Include jQuery -->
+  <script src="js/jquery-2.2.4.min.js"></script>
+  <!-- Pie chart cdn -->
+  <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+  <script type="text/javascript">
+    // Load google charts
+    google.charts.load('current', {'packages':['corechart']});
+    google.charts.setOnLoadCallback(drawChart);
+
+    // Draw the chart and set the chart values
+    function drawChart() {
+      var data = google.visualization.arrayToDataTable([
+      ['Task', 'Hours per Day'],
+      ['Approved', 3],
+      ['Open', 10],
+      ['Draft', 1],
+      ['Reading', 5]
+    ]);
+
+      // Optional; add a title and set the width and height of the chart
+      var options = {'title':'My Average Day', 'width':200, 'height':200, 'legend': 'bottom'};
+
+      // Display the chart inside the <div> element with id="piechart"
+      var chart = new google.visualization.PieChart(document.getElementById('piechart'));
+      chart.draw(data, options);
+    }
+  </script>
+</body>
+</html>
+
+
+
+
+
+
+
