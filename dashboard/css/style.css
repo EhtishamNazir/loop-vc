@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;600;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Source+Sans+Pro:wght@400;600;700;900&display=swap');
 
 /*Generaal Styles Starts*/
 *{
@@ -1429,6 +1430,174 @@ a{
 	height: 20px;
 	vertical-align: middle;
 }
+#files.profile-tab-content{
+	padding: 0;
+	margin-top: 0;
+}
+.profile .profile-body .file-items{
+	width: 100%;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	border: 1px solid #828282;
+	border-top: none;
+	padding: 10px 5px 150px 5px;
+}
+.profile .profile-body .file-items .file-item{
+	width: 32%;
+	border: 1px solid #D7DFE9;
+	box-sizing: border-box;
+	border-radius: 4px 4px 0px 0px;
+}
+.profile .profile-body .file-items .file-item .file-item-img img{
+	width: 100%;
+}
+.profile .profile-body .file-items .file-item .file-details{
+	padding: 10px;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	align-items: center;
+}
+.profile .profile-body .file-items .file-item .file-details .file-details-text{
+	width: 88%;
+}
+.profile .profile-body .file-items .file-item .file-details .file-details-text .file-details-text-head p{
+	font-size: 14px;
+	color: #171F46;
+}
+
+.profile .profile-body .file-items .file-item .file-details .file-details-text .file-details-text-date p{
+	font-size: 13px;
+	color: #7E858E;
+}
+
+/*investors.html page styles*/
+.investors .investors-head{
+	margin-bottom: 10px;
+}
+.investors .investors-head p{
+	font-size: 24px;
+	font-weight: 700;
+	color: #121029;
+	text-transform: uppercase;
+}
+.investors .portfolio-header{
+	justify-content: flex-start;
+}
+.investors .portfolio-header .portfolio-header-search{
+	width: 60%;
+	display: block;
+}
+.investors .portfolio-header .portfolio-header-search .search{
+	width: 95%;
+}
+.portfolio.investors .portfolio-header .portfolio-header-filter .create-project .create-btn{
+	padding: 10px 50px;
+}
+.investors .investor-items{
+	width: 90%;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+.investors .investor-items .investor-item{
+	position: relative;
+	width: 32%;
+	border: 1px solid #E6E9ED;
+	box-sizing: border-box;
+	border-radius: 8.8px;
+	text-align: center;
+	padding: 15px 25px;
+}
+.investors .investor-items .investor-item .label{
+	position: absolute;
+	top: 10px;
+	left: 0;
+	padding: 5px 0;
+	color: #ffffff;
+	text-transform: capitalize;
+	background-color: #EE3A48;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	align-items: center;
+}
+.investors .investor-items .investor-item .label span{
+	padding: 0 10px;
+	font-size: 14px;
+}
+.investors .investor-items .investor-item .label .shape{
+	width: 0;
+	height: 0;
+	border-top: 12.5px solid transparent;
+	border-right: 25px solid #ffffff;
+	border-bottom: 12.5px solid transparent;
+}
+.investors .investor-items .investor-item .investor-item-img{
+	margin-bottom: 20px;
+}
+.investors .investor-items .investor-item .investor-item-name p{
+	font-family: 'Montserrat', sans-serif;
+	font-size: 16px;
+	color: #434A54;
+}
+.investors .investor-items .investor-item .investor-item-email{
+	margin-top: 10px;
+	margin-bottom: 20px;
+}
+.investors .investor-items .investor-item .investor-item-email p{
+	font-family: 'Montserrat', sans-serif;
+	font-size: 14px;
+	color: #434A54;
+}
+.investors .investor-items .investor-item .investor-item-btns{
+	margin-bottom: 20px;
+}
+.investors .investor-items .investor-item .investor-item-btns a{
+	font-size: 14px;
+	color: #FFFFFF;
+	text-transform: capitalize;
+	background-color: #EE3A48;
+	border-radius: 3px;
+	padding: 5px 10px;
+	margin-right: 5px;
+}
+.investors .investor-items .investor-item .investor-item-btns a.tale-bg{
+	background-color: #138EAA;
+}
+.investors .investor-items .investor-item .projects-invested{
+	position: relative;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+.investors .investor-items .investor-item .projects-invested .projects,
+.investors .investor-items .investor-item .projects-invested .invested{
+	width: 48%;
+}
+.investors .investor-items .investor-item .projects-invested .separator {
+  height: 100%;
+  width: 1px;
+  background: black;
+  margin: 0 auto;
+  top: 0;
+  bottom: 0;
+  position: absolute;
+  left: 50%;
+}
+.investors .investor-items .investor-item .projects-invested .projects .projects-head,
+.investors .investor-items .investor-item .projects-invested .invested .invested-head,
+.investors .investor-items .investor-item .projects-invested .invested .invested-number {
+	font-size: 14px;
+	color: #434A54;
+	text-transform: capitalize;
+}
+.investors .investor-items .investor-item .projects-invested .projects .projects-number{
+	font-size: 18px;
+	color: #434A54;
+}
+
 
 /* Media queries - Responsive timeline on screens less than 600px wide */
 /*Style for different devices*/
@@ -1738,8 +1907,25 @@ a{
 		width: 15px;
 		height: 15px;
 	}
+	.profile .profile-body .file-items .file-item{
+		width: 100%;
+		margin-bottom: 20px;
+	}
 
-
+	/*investors.html page styles*/
+	.investors .portfolio-header .portfolio-header-search .search{
+		width: 100%;
+	}
+	.investors .investor-items{
+		width: 100%;
+	}
+	.investors .investor-items .investor-item{
+		width: 100%;
+		margin-bottom: 20px;
+	}
+	.investors .investor-items .investor-item .label{
+		top: 15px;
+	}
 }
 
 @media(min-width: 768px) and (max-width:  1023px){
@@ -1883,6 +2069,18 @@ a{
 		width: 88%;
 	}
 
+	/*investors.html page styles*/
+	.investors .portfolio-header .portfolio-header-search .search{
+		width: 90%;
+	}
+	.investors .investor-items{
+		width: 100%;
+	}
+	.investors .investor-items .investor-item{
+		width: 48%;
+		margin-bottom: 20px;
+	}
+
 }
 
 @media(min-width: 1024px) and (max-width:  1050px){
@@ -1971,5 +2169,17 @@ a{
 	}
 	.conversation-details .message-left .item-left-text, .conversation-details .message-right .item-right-text{
 		width: 88%;
+	}
+
+	/*investors.html page styles*/
+	.investors .portfolio-header .portfolio-header-search .search{
+		width: 90%;
+	}
+	.investors .investor-items{
+		width: 100%;
+	}
+	.investors .investor-items .investor-item{
+		width: 48%;
+		margin-bottom: 20px;
 	}
 }
