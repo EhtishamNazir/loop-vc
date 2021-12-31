@@ -1749,13 +1749,32 @@ a{
 	display: none;
 }
 .main .main-content .payment-history-details table .rows.show {
-  display: inline-block;
+  display: table-row;
 }
 .main .main-content .payment-history-details table td{
 	padding: 10px 0;
 	text-align: center;
 	font-size: 16px;
 	color: #000000;
+}
+.main .main-content .payment-history-details table td .cancel-status,
+.main .main-content .payment-history-details table td .completed-status,
+.main .main-content .payment-history-details table td .pending-status{
+	background: #FEE6EA;
+	border: 1px solid #FEE6EA;
+	border-radius: 40px;
+	font-size: 15px;
+	color: #F72B50;
+	text-transform: capitalize;
+	padding: 3px 15px;
+}
+.main .main-content .payment-history-details table td .completed-status{
+	background-color: #219653;
+	color: #Ffffff;
+}
+.main .main-content .payment-history-details table td .pending-status{
+	background-color: #828282;
+	color: #Ffffff;
 }
 
 /*plan-creator.html page styles*/
@@ -1963,7 +1982,142 @@ a{
 	 text-align: center;
 	 font-size: 14px;
 }
- 
+
+/*messages.html page styles*/
+#messages .main-content{
+	padding: 0;
+}
+.messages {
+	width: 100%;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+.messages .sidebar{
+	width: 20%;
+	height: 100vh;
+	background-color: rgba(196, 196, 196, 0.04);
+}
+.messages .sidebar ul{
+	padding: 30px 0;
+}
+.messages .sidebar ul li{
+	margin-bottom: 10px;
+}
+.messages .sidebar ul li a{
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+	padding: 5px 15px 5px 20px;
+	font-size: 14px;
+	font-weight: 600;
+	color: #202124;
+	text-transform: capitalize;
+	border-top-right-radius: 15px;
+	border-bottom-right-radius: 15px;
+	background: #F9FBFF;
+}
+.messages .sidebar ul li a img{
+	vertical-align: middle;
+	margin-right: 10px;
+}
+.messages .sidebar ul li a.active{
+	color: #EE3A48;
+	background-color: #F9E9E7;
+}
+.messages .details{
+	width: 80%;
+	padding: 60px 30px 0 30px;
+}
+.messages .details .details-head{
+	width: 100%;
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	justify-content: space-between;
+	box-shadow: inset 0px -1px 0px #EDEFF1;
+	border-bottom: 1px solid #dddddd;
+	padding-bottom: 5px;
+}
+.messages .details .details-head .details-head-left{
+	width: 13%;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+.messages .details .details-head .details-head-left img{
+	vertical-align: middle;
+}
+.messages .details .details-head .details-head-middle{
+	width: 58%;
+	position: relative;
+}
+.messages .details .details-head .details-head-middle img{
+	position: absolute;
+	top: 5px;
+	left: 7px;
+}
+.messages .details .details-head .details-head-middle input[type="search"]{
+	width: 100%;
+	padding: 10px 10px 10px 50px;
+	border: none;
+	background-color: #F1F3F4;
+	border-radius: 8px;
+}
+.messages .details .details-head .details-head-right{
+	width: 22%;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	align-items: center;
+}
+.messages .details .details-head .details-head-right .number-of-mails p{
+	color: rgba(0, 0, 0, 0.54);
+	font-size: 16px;
+}
+.messages .details .details-head .details-head-right .next-prev-btn a{
+	margin-right: 10px;
+}
+.messages .details .details-head .details-head-right .next-prev-btn a img{
+	vertical-align: middle;
+}
+.messages .details .details-body{
+	padding: 25px 0;
+}
+.messages .details .details-body .details-body-item{
+	width: 100%;
+	margin-bottom: 10px;
+}
+.messages .details .details-body .details-body-item a{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+.messages .details .details-body .details-body-item div{
+	font-size: 14px;
+	color: #202124;
+	font-weight: 700;
+	text-transform: capitalize;
+	padding: 5px 0;
+}
+.messages .details .details-body .details-body-item .name{
+	width: 10%;
+}
+.messages .details .details-body .details-body-item .company{
+	width: 25%;
+	text-align: center;
+}
+.messages .details .details-body .details-body-item .desc{
+	width: 55%;
+	height: 27px;
+	overflow: hidden;
+	font-weight: 400;
+	color: rgba(0, 0, 0, 0.54);
+}
+.messages .details .details-body .details-body-item .time{
+	width: 10%;
+}
+
 
 /* Media queries - Responsive timeline on screens less than 600px wide */
 /*Style for different devices*/
@@ -2036,7 +2190,7 @@ a{
 	}
 
 	/*sidebar styles*/
-	.sidebar{
+	.sidebar-main .sidebar{
 		display: none;
 	}
 
@@ -2309,6 +2463,67 @@ a{
 		margin-top: 10px;
 		margin-bottom: 10px;
 	}
+
+	/*payment-history.html page style*/
+	.main .main-content .payment-history-head{
+		padding: 10px;
+	}
+	.main .main-content .payment-history-head .search{
+		width: 100%;
+		margin-top: 10px;
+	}
+	.main .main-content .payment-history-head .filter-btns .btn{
+		margin-right: 0;
+	}
+	.main .main-content .payment-history-head .filter-btns{
+		width: 100%;
+	}
+	.main .main-content .payment-history-details table{
+		width: 800px;
+	}
+	.main .main-content .payment-history-details table td{
+		padding: 10px;
+	}
+
+	/*messages.html page styles*/
+	.messages .sidebar{
+		display: block;
+		width: 100%;
+		height: auto;
+	}
+	.messages .sidebar ul{
+		width: 100%;
+		padding: 5px 0;
+	}
+	.messages .sidebar ul li{
+		display: inline-block;
+		width: 48%;
+	}
+	.messages .sidebar ul li a{
+		width: 100%;
+		border-radius: 30px;
+	}
+	.messages .details{
+		width: 100%;
+		padding: 10px;
+	}
+	.messages .details .details-head .details-head-left,
+	.messages .details .details-head .details-head-right{
+		display: none;
+	}
+	.messages .details .details-head .details-head-middle{
+		width: 100%;
+	}
+	.messages .details .details-body .details-body-item .company,
+	.messages .details .details-body .details-body-item .name{
+		display: none;
+	}
+	.messages .details .details-body .details-body-item .desc{
+		width: 80%;
+	}
+	.messages .details .details-body .details-body-item .time{
+		width: 20%;
+	}
 }
 
 @media(min-width: 768px) and (max-width:  1023px){
@@ -2464,6 +2679,36 @@ a{
 		margin-bottom: 20px;
 	}
 
+	/*payment-history.html page styles*/
+	.main .main-content .payment-history-head{
+		padding: 10px;
+	}
+	.main .main-content .payment-history-head .filter-btns{
+		width: 60%;
+	}
+	.main .main-content .payment-history-head .search{
+		width: 38%;
+	}
+
+	/*messages.html page styles*/
+	.messages .sidebar{
+		display: block;
+	}
+	.messages .sidebar ul{
+		padding-top: 10px;
+	}
+	.messages .details{
+		padding: 30px 20px;
+	}
+	.messages .details .details-body .details-body-item .company{
+		display: none;
+	}
+	.messages .details .details-body .details-body-item .name{
+		width: 15%;
+	}
+	.messages .details .details-body .details-body-item .desc{
+		width: 65%;
+	}
 }
 
 @media(min-width: 1024px) and (max-width:  1050px){
@@ -2564,5 +2809,16 @@ a{
 	.investors .investor-items .investor-item{
 		width: 48%;
 		margin-bottom: 20px;
+	}
+
+	/*payment-history.html page styles*/
+	.main .main-content .payment-history-head{
+		padding: 10px;
+	}
+	.main .main-content .payment-history-head .filter-btns{
+		width: 60%;
+	}
+	.main .main-content .payment-history-head .search{
+		width: 38%;
 	}
 }
