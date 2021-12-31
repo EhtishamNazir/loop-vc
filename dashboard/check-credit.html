@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Loop VC - Check Credit</title>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- Custom StyleSheet -->
+  <link rel="stylesheet" href="css/style.css">
+  
+<body>
+<!-- Header Section Starts -->
+<header class="header">
+   <div class="header-main">
+      <div class="logo">
+         <a href="index.html"><img src="img/logo.png" alt="Logo" /></a>
+      </div>
+      <div class="open-nav-menu">
+         <span></span>
+      </div>
+      <div class="menu-overlay">
+      </div>
+      <!-- navigation menu start -->
+      <nav class="nav-menu">
+         <div class="close-nav-menu">
+            <img src="img/close-icon.png" alt="Close Icon">
+         </div>
+         <ul class="menu">
+            <li class="menu-item">
+               <a href="index.html"><img src="img/dashboard-white.png" alt="Dashboard Icon"> dashboard</a>
+            </li>            
+            <li class="menu-item">
+               <a href="profile.html"><img src="img/profile-white.png" alt="Profile Icon"> my profile</a>
+            </li>
+            <li class="menu-item">
+               <a href="portfolio.html"><img src="img/portfolio-white.png" alt="Portfolio Icon"> portfolio</a>
+            </li>
+            <li class="menu-item">
+               <a href="investors.html"><img src="img/investors-white.png" alt="Investors Icon"> investors</a>
+            </li>
+            <li class="menu-item">
+               <a href="messages.html"><img src="img/messages-white.png" alt="Messages Icon"> messages</a>
+            </li>
+            <li class="menu-item">
+               <a href="plan-creator.html"><img src="img/settings-white.png" alt="Settings Icon"> business plan creator</a>
+            </li>
+            <li class="menu-item">
+               <a href="payment-history.html"><img src="img/payment-history-white.png" alt="Settings Icon">payment history</a>
+            </li>
+            <li class="menu-item">
+               <a href="settings.html"><img src="img/settings-white.png" alt="Settings Icon"> settings</a>
+            </li>
+            <li class="menu-item">
+               <a href="#contact">logout</a>
+            </li>
+            <li class="menu-item noti-user-sm">
+               <a href="notifications.html">notifications</a>
+            </li>
+         </ul>
+      </nav>
+      <!-- navigation menu end -->
+      <div class="noti-user">
+         <a href="notifications.html"><img src="img/bell.png" alt="Notification"></a>
+         <a href="profile.html"><img src="img/user.png" alt="User Image">Michael Adewale</a>
+      </div>
+   </div>
+</header>
+<!-- Header Section Ends -->
+
+<!-- Sidebar and Main Section Starts -->
+<section class="sidebar-main">
+
+  <!-- Main section starts -->
+  <div class="check-credit main">
+    <div class="main-content">
+      <div class="slider">
+        <div class="slideshow-container">
+          <div class="mySlides fade">
+            <div class="slider-item">
+              <div class="slider-item-head">
+                <p>PAY YOUR LOAN ON TIME</p>
+              </div>
+              <div class="slider-item-desc">
+                <p>
+                Responsible financial behaviour includes the way you approach your existing credit.<br> 
+                Always make your payments on time and try to aim for the same day each month. <br>
+                To avoid missing payments or paying late, both of which have a negative impact on your credit score, <br>
+                consider making your payments via debit order.</p>
+              </div>
+            </div>
+          </div>
+          <div class="mySlides fade">
+            <div class="slider-item">
+              <div class="slider-item-head">
+                <p>GET OUT OF DEBT</p>
+              </div>
+              <div class="slider-item-desc">
+                <p>Borrowers with small amounts of debt might not have any trouble putting aside enough money each month to makZe their repayments. But those heavily in debt will need a strategy, and some might even need to rely on a debt consolidation loan to make their debt manageable.</p>
+              </div>
+            </div>
+          </div>
+          <div class="mySlides fade">
+            <div class="slider-item">
+              <div class="slider-item-head">
+                <p>PAY YOUR LOAN ON TIME</p>
+              </div>
+              <div class="slider-item-desc">
+                <p>
+                Responsible financial behaviour includes the way you approach your existing credit.<br> 
+                Always make your payments on time and try to aim for the same day each month. <br>
+                To avoid missing payments or paying late, both of which have a negative impact on your credit score, <br>
+                consider making your payments via debit order.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <br>
+
+        <div class="dots">
+          <span class="dot"></span> 
+          <span class="dot"></span> 
+          <span class="dot"></span> 
+        </div>
+
+      </div>
+      <div class="form">
+        <div class="form-head">
+          <p>Check Your Credit Score</p>
+        </div>
+        <form action="">
+          <input type="text" class="form-control" placeholder="Enter Full Name" />
+          <input type="text" class="form-control" placeholder="Enter BVN" />
+          <input type="submit" value="Submit">
+        </form>
+      </div>
+    </div>
+  </div>
+  <!-- Main section ends -->
+</section>
+
+	<script src="js/script.js"></script>
+	<!-- Include jQuery -->
+  <script src="js/jquery-2.2.4.min.js"></script>
+  <script type="text/javascript">
+     var slideIndex = 0;
+     showSlides();
+
+     function showSlides() {
+       var i;
+       var slides = document.getElementsByClassName("mySlides");
+       var dots = document.getElementsByClassName("dot");
+       for (i = 0; i < slides.length; i++) {
+         slides[i].style.display = "none";  
+       }
+       slideIndex++;
+       if (slideIndex > slides.length) {slideIndex = 1}    
+       for (i = 0; i < dots.length; i++) {
+         dots[i].className = dots[i].className.replace(" active", "");
+       }
+       slides[slideIndex-1].style.display = "block";  
+       dots[slideIndex-1].className += " active";
+       setTimeout(showSlides, 2000); // Change image every 2 seconds
+     }
+  </script>
+</body>
+</html>
+
+
+
+
+
+
+
